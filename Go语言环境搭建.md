@@ -54,7 +54,8 @@ tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 添加`/usr/local/go/bin`到`PATH`环境变量。您可以通过将此行添加到您的`/etc/profile` （用于系统范围的安装）或`$HOME/.profile`：
 
 ```
-export PATH = $ PATH：/usr/local/go/ bin
+export PATH = $PATH:/usr/local/go/bin
+export GOPATH = $PATH:/usr/local/go_workspace
 ```
 
 **注意**：`profile`在下次登录计算机之前，对文件所做的更改可能不适用。要立即应用更改，只需直接运行shell命令或使用如下命令从配置文件中执行它们 `source $HOME/.profile`  例如： source /etc/profile。
